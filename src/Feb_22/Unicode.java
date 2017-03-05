@@ -1,5 +1,9 @@
-package Feb_20;
+package Feb_22;
 
+/*
+ * •	Print all the Unicode Characters - follow the link in reading activity to 
+ * understand more about Unicode 
+*/
 public class Unicode {
 
 	public static void main(String[] args) {

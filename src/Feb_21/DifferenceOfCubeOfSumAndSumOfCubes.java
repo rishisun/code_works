@@ -1,5 +1,5 @@
 package Feb_21;
-public class Feb_21 {
+public class DifferenceOfCubeOfSumAndSumOfCubes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
