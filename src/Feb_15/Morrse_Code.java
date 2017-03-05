@@ -37,7 +37,7 @@ public class Morrse_Code {
 			String k[] = ans.split("|");
 			for (String l : k) {
 				bb: 
-					for (int j = 0; j < e.length; j++) {
+					for (int j = 0; j < k.length; j++) {
 					if (l.equalsIgnoreCase(m[j])) {
 						System.out.print(e[j]);
 						break bb;

@@ -13,25 +13,21 @@ public class Binlogic {
 		int[] a;
 		a = new int[16];
 		temp = x;
-		while (temp >= 0) {
+		while (temp >= 0 && i < 16) {
 			if (temp % 2 == 0) {
 				a[i] = 0;
 			} else {
 				a[i] = 1;
 			}
-			i++;
 			temp = temp / 2;
-			if (temp == 0) {
-				break;
-			}
+			 if (temp == 0){
+				 break;}
+			 i++;
 		}
 		System.out.println("the binary equivalent is");
-		for (j = i; j > 0; j--) {
-
+		for (j =i; j >= 0; j--) {
 			System.out.print(+a[j]);
-
 		}
-		
 		input.close();
 	}
 }
