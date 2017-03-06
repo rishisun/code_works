@@ -57,6 +57,7 @@ public class WordLength {
 				System.out.println(count[hundreds] + count[28] + count[30] + count[tens]);
 
 			}
+			}
 			else{
 				thousand = temp/1000;
 				temp =temp-thousand*1000;
@@ -76,9 +77,8 @@ public class WordLength {
 				}
 
 			}
-		}
+		
 
 		x.close();
-	}
+	}}
 
-}
