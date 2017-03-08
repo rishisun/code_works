@@ -23,7 +23,7 @@ public class WordLength {
 		// TODO Auto-generated method stub
 		String words[] = { "zero ", "one ", "two ", "there ", "four ", "five ", "six ", "seven ", "eigth ", "nine ",
 				"ten ", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixtenn", "seventeen", "eighteen",
-				"nineteen", "twenty ", "thirty ", "fourty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninty ",
+				"nineteen", "twenty ", "thirty ", "fourty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety ",
 				"hundred ", "thousand ", "and " };
 		int count[] = { 4, 3, 3, 5, 4, 4, 3, 5, 5, 4, 3, 6, 6, 8, 8, 7, 7, 9, 9, 8, 6, 6, 6, 5, 5, 7, 6, 6, 7, 8, 3 };
 		int n = 0, temp = 0, tens, hundreds, thousand, ones;
