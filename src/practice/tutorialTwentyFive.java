@@ -1,10 +1,20 @@
-package Feb_22;
+package practice;
 
-public class PhythagorusTriplet {
+public class tutorialTwentyFive {
 
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		
+		
+		
+		
+		
 	}
 
 }
