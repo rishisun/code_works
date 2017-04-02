@@ -1,1 +1,16 @@
 # code_works
+This codes are just for practicing mycoding and problem solving skills.
+## Src
+- I have done some of the [euler's Project]{https://projecteuler.net/} in java.
+
+
+## Bash_Scripting
+
+
+## Database
+Here I used an dummy database and practiced diffeerent quires 
+the dummy database is about a employee database
+- which contains info on the employees
+- payment details of employee
+- location of employee
+- service type of employee
