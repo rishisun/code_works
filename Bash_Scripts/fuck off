@@ -1,0 +1,5 @@
+#vim fuck off
+#!/bin/bash
+shutdown
+echo say soory!
+
