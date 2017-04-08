@@ -1,0 +1,50 @@
+##3/23/2017
+###Write a query to find the all the names which contain the word or a part of a word Suresh, sort the result in the order of similarity.
+Ex: Suresh, Sures, Sure, Sur, Su, S (Names containing the word Suresh, later names containing Sures and so on)
+```sql
+ select name from tblemployees where name like "%s%";
+```
+```sql
+select name from tblemployees where name like "%suresh%" union select name from tblemployees where name like "%sures%" union select name from tblemployees where name like "%sure%" union select name from tblemployees where name like "%sur%" union select name from tblemployees where name like "%su%" union select name from tblemployees where name like "%s%";
+
+```
+-1193 rows in set (0.00 sec)
+-1077 rows in set (0.01 sec)
+
+###Display all names from tblEmployees by appending it with INDIAN at the end if the name starts from A-M, for names starting from N-Z append AMERICAN at the end.
+Ex: Shyam should display as ShyamAMERICAN and Abdul should display as AbdulINDIAN
+```sql
+?
+``` 
+
+###Write a query to find the name(s) having the largest number of characters in it. (Hint: Use aggregate functions)
+```sql
+select name ,char_length(name) from tblemployees order by 2 desc limit 1 ;
+- VADLA KONDA ASHOK KUMAR |                23
+```
+
+###Write a query to list all the employees whose name starts and ends with same character.
+```sql
+select name from tblemployees where substring(name,1,1)=substring(name,-1,1);
+```
+-5 rows in set (0.00 sec)
+
+###Write a query to list all employees whose first and second character in their names are similar.
+```sql
+select name from tblemployees where substring(name,1,1)=substring(name,2,1);
+```
+-5 rows in set (0.00 sec)
+```sql
+select name from tblemployees where substring(name,1,1)=substring(name,2,1) and name !="00";
+```
+-2 rows in set (0.01 sec)
+
+###Write a query to get Max salary and Min salary of all the employees. (NOTE: You can skip any two of the above questions if you execute the query without aggregate functions)
+
+```sql
+select max(grosspay),min(grosspay) from tblpayemployees where grosspay!=0;
+```
+-
+```sql
+(select grosspay from tblpayemployees order by 1 limit 1) union (select t.grosspay from tblpayemployees as t order by 1 desc limit 1 ) ;
+```

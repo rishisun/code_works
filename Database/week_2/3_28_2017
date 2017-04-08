@@ -1,0 +1,10 @@
+##27/3/2017
+###
+```sql
+```
+
+###
+###Write a query to get the top 4 salaried employees
+Use ROW_NUMBER function
+Without using any pre-defined functions
+

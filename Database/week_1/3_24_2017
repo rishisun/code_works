@@ -1,0 +1,48 @@
+##3/24/2017
+###Write a query to display the currentdate in all possible formats
+```sql
+?
+```
+###Write a Query to List out all employees where the present basic is perfectly rounded of to 100. Ex: If Basic of A is 2011, Basic of B is 2100 , Basic of C is 2101 and Basic of D is 2200 . Then Only B and D should be displayed
+```sql
+select name,presentbasic from tblemployees where presentbasic!=0 and presentbasic%100=0;
+
+```
+-7 rows in set (0.00 sec)
+
+###Write a query to find out employees whose names have Leading or Trailing spaces
+```sql
+select name from tblemployees where name like " %" or name like "% ";
+```
+-2066 rows in set (0.00 sec)
+```sql
+select name from tblemployees where left(name,1)=" " or substring(name,-1,1)=" ";
+```
+-2066 rows in set (0.00 sec)
+
+###Write a update query to remove trailing spaces from the employee names. Ex: If the employee name is Naseeruddin Shah    , then after running the update query the name should be Naseeruddin Shah.(without any spaces at the end)
+```sql
+update tblemployees set name='rtrim(name)' where substring(name,-1,1)=" ";
+```
+-Query OK, 2066 rows affected (0.10 sec) Rows matched: 2066  Changed: 2066  Warnings: 0
+
+###Write a similar update query to remove the leading spaces from the employee names
+```sql
+update tblemployees set name='ltrim(name)' where substring(name,1,1)=" ";
+```
+-Query OK, 0 rows affected (0.01 sec)
+-Rows matched: 0  Changed: 0  Warnings: 0
+
+###Write a query to find list of employees and payments where the employee is paid VDA but not PF
+```sql
+?
+```
+###Write a query to find list of employees and payments where the employee is paid VDA and PF
+```sql
+?
+```
+###Write a query to list all the employees whose name starts and ends with same character (case-sensitive)
+```sql
+?
+```
+
