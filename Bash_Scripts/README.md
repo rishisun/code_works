@@ -20,5 +20,5 @@ This is testing the link
 dim(iris)
 ```
 
-[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/html-document.html)
+[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown)
 
