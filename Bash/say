@@ -1,0 +1,7 @@
+#$vi say
+#!/bin/bash
+#read a name
+echo hello! please tell me your name 
+read fname 
+echo hello $fname !nice to meet you
+echo let be friends ok
