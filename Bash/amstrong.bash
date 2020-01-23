@@ -1,9 +1,9 @@
-#!/bin/bash
-echo -n "Enter the Number"
+#!/usr/bin/env bash
+echo -n -e "\nEnter the Number: \n"
 read number
-oldnumber=$number
+oldnumber=${number}
 p=${#number}
-while test $number -ne 0
+while test ${number} -ne 0
 do
 rem=$(($number%10))
 power=$(($rem**$p))
@@ -12,7 +12,7 @@ number=$(($number/10))
 done
 if test $oldnumber -eq $sum
 then
-echo the number is amstrong
+echo ${oldnumber} is an AMSTRONG NUMBER.
 else
-echo the number is not amstrong
+echo ${oldnumber} is not an AMSTRONG NUMBER.
 fi
